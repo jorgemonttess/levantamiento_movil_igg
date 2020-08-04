@@ -218,14 +218,15 @@ $(document).ready(function(){
             var datosResp = datos.split("|");
             
             var r = datosResp[0];
-		
-            if(r.trim()=="no_existe"){
 
+            if(r.trim()=="no_existe"){
+                alertify.alert('<font face=Arial color=Red><b><span class="fas fa-times"></span>ERROR</b></font>', '<font face=Arial>¡El folio no existe!</font>');
 
             }
             else if(r.trim()=="existe"){
-                $("#folio").val(datosResp[1]);
-                $("#incidencia").val(datosResp[2]);
+                $("#id_reg").val(datosResp[1]);
+                $("#folio").val(datosResp[2]);
+                $("#incidencia").val(datosResp[3]);
                 
                 $("#busquedaFolio").css("display","none");
                 $("#levantamientoFolio").css("display","block");
@@ -272,26 +273,29 @@ $(document).ready(function(){
     
     
     $("#btnGuardar").click(function(){
-        $("#loading").css("display","block");
+        var idUsuario = $("#idUsuario").val();
+        var id_reg = $("#id_reg").val();
+        var folio = $("#folio").val();
+        var incidencia = $("#incidencia").val();
         var lat = $("#lat").val();
         var long = $("#long").val();
+        var observacion = $("#observacion").val();
 
         $.post("includes/accion_guadarCuestionario.php", {
+            id_reg:id_reg,
             idUsuario:idUsuario,
+            folio:folio,
+            incidencia:incidencia,
             lat:lat,
-            long:long
+            long:long,
+            observacion:observacion
         }, function(respuesta){
-            alert(respuesta);
             if(respuesta.trim()=="fallo"){
                 alertify.alert('<font face=Arial color=Red><b><span class="fas fa-times"></span>ERROR</b></font>', '<font face=Arial>¡Ocurrio un problema, por favor vuelve a intentar!</font>');
                 $("#loading").css("display","none");
             }
             else if(respuesta.trim()=="generado"){
-                alertify.alert('<font face=Arial color=Green><b><span class="fas fa-check-circle"></span> Encuesta Guardada</b></font>', '<font face=Arial>¡Encuesta guardada con exito!</font>');
-                setTimeout(function(){
-                    $("#loading").css("display","none");
-				    $(location).attr('href',"cuestionario.php");;
-                }, 2000);  
+                alertify.alert('<font face=Arial color=Green><b><span class="fas fa-check-circle"></span> Registro Guardado</b></font>', '<font face=Arial>¡Registro guardado con exito!</font>');
             }
         })
 
