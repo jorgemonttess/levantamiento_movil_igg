@@ -16,6 +16,8 @@
         
         <link href="js/jquery-ui.css" rel="stylesheet">
         <link href="lib/bootstrap/bootstrap.min4.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="lib/alertifyjs/css/alertify.css">
+        <link rel="stylesheet" type="text/css" href="lib/alertifyjs/css/themes/bootstrap.css">
         <link href="lib/fontawesome/css/fontawesome.min.css" rel="stylesheet">
         <link href="lib/fontawesome/css/all.css" rel="stylesheet">  
         
@@ -112,6 +114,9 @@
                     <!--Levantamiento-->
                     <div id="levantamientoFolio" class="borde">
                         <div class="row">
+                            <div class="col-12 cajasLev">
+                                <input type="hidden" id="id_reg" placeholder="Id Registro" class="form-control controlesLev" disabled>
+                            </div>
                             <div class="col-12 cajasLev">
                                 <input type="text" id="folio" placeholder="Folio" class="form-control controlesLev" disabled>
                             </div>
