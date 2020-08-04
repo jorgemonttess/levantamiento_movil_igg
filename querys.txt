@@ -1,0 +1,11 @@
+create table levantamiento_movil(
+	id_reg serial primary key,
+	usuario text,
+	fecha timestamp,
+	folio text,
+	incidencia text,
+	lat text,
+	long text,
+	observaciones text,
+	fotografia text
+)

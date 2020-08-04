@@ -1,0 +1,100 @@
+1;1;¿Dentro de los tipos de peligro que existen (ver cuadro) cuantos tipos de fuentes de peligro identifica en su comunidad?;pregunta;#;-;unica;1;-
+1;1;De 1 a 5;resp;1;2;-;2;1
+1;1;De 6 a 13;resp;1;2;-;3;0.5
+1;1;14 ó más;resp;1;2;-;4;0
+2;2;Respecto a los peligros mencionados en la pregunta N°1recuerda o ¿sabe si ha habido emergencias asociadas a estas amenazas en los últimos años?;pregunta;#;-;unica;5;-
+2;2;Si;resp;2;3;-;6;0
+2;2;No;resp;2;3;-;7;1
+2;2;No se;resp;2;3;-;8;1
+3;3;¿Considera que un fenómeno natural se puede convertir en desastre?;pregunta;#;-;unica;9;-
+3;3;Si;resp;3;4;-;10;0
+3;3;No;resp;3;4;-;11;1
+3;3;No se;resp;3;4;-;12;1
+4;4;¿Considera que su vivienda está localizada en un área susceptible de amenazas (que se encuentren en una ladera, en una zona sísmica, en una zona inundable, etc.);pregunta;#;-;unica;13;-
+4;4;Si;resp;4;5;-;14;0
+4;4;No;resp;4;5;-;15;1
+4;4;No se;resp;4;5;-;16;1
+5;5;¿ha sufrido la perdida de algún bien a causa de un desastre natural?;pregunta;#;-;unica;17;-
+5;5;Si;resp;5;6;-;18;0
+5;5;No;resp;5;6;-;19;1
+5;5;No se;resp;5;6;-;20;1
+6;6;En caso que recuerde algún desastre, los daños que se presentaron en su comunidad fueron:;pregunta;#;-;unica;21;-
+6;6;Ninguna fatalidad, daños leves a viviendas e infraestructura (bajo);resp;6;7;-;22;0.25
+6;6;Personas fallecidas algunas viviendas con daño total y daño a infraestructura (medio);resp;6;7;-;23;0.5
+6;6;Personas fallecidas, daño total en muchas viviendas y daños graves en infraestructura (alto);resp;6;7;-;24;1
+7;7;¿alguna vez ha quedado aislada su comunidad a causa de la interrupción de visas de comunicación por algunas horas debido a algún tipo de fenómeno natural?;pregunta;#;-;unica;25;-
+7;7;Si;resp;7;8;-;26;0
+7;7;No;resp;7;8;-;27;1
+7;7;No se;resp;7;8;-;28;1
+8;8;¿Cree que su en comunidad identifica los peligros?;pregunta;#;-;unica;29;-
+8;8;Si;resp;8;9;-;30;0
+8;8;No;resp;8;9;-;31;1
+8;8;No se;resp;8;9;-;32;1
+9;9;¿Conoce algún programa, obra o institución que ayuda a disminuir efectos de fenómenos naturales (construcción de bordos, presas, terrazas, sistema de drenaje, sistema de alertamiento, etc.);pregunta;#;-;unica;33;-
+9;9;Si;resp;9;10;-;34;0
+9;9;No;resp;9;10;-;35;1
+9;9;No se;resp;9;10;-;36;1
+10;10;¿En los centros educativos de su localidad o municipio se enseñan temas acerca de las consecuencias que trae consigo un fenómeno natural?;pregunta;#;-;unica;37;-
+10;10;Si;resp;10;11;-;38;0
+10;10;No;resp;10;11;-;39;1
+10;10;No se;resp;10;11;-;40;1
+11;11;¿Alguna vez en su comunidad se han llevado a cabo campañas de información acerca de los peligros existentes en ella?;pregunta;#;-;unica;41;-
+11;11;Si;resp;11;12;-;42;0
+11;11;No;resp;11;12;-;43;1
+11;11;No se;resp;11;12;-;44;1
+12;12;En caso de haberse llevado campañas de información ¿Cómo se enteró?;pregunta;#;-;unica;45;-
+12;12;No se entero / no ha habido campañas;resp;12;13;-;46;1
+12;12;A través de medios impresos;resp;12;13;-;47;0.5
+12;12;A través de radio y televisión;resp;12;13;-;48;0
+13;13;¿Ha participado en algún simulacro en alguna ocasión?;pregunta;#;-;unica;49;-
+13;13;Si;resp;13;14;-;50;0
+13;13;No;resp;13;14;-;51;1
+13;13;No se;resp;13;14;-;52;1
+14;14;¿Sabe a quien o a donde acudir en caso de una emergencia?;pregunta;#;-;unica;53;-
+14;14;Si;resp;14;15;-;54;0
+14;14;No;resp;14;15;-;55;1
+14;14;No se;resp;14;15;-;56;1
+15;15;¿Sabe si existe en su comunidad un sistema de alertamiento para dar aviso a la población sobre alguna emergencia?;pregunta;#;-;unica;57;-
+15;15;Si;resp;15;16;-;58;0
+15;15;No;resp;15;16;-;59;1
+15;15;No se;resp;15;16;-;60;1
+16;16;En caso de haber sido afectado a causa de un fenómeno natural ¿se le brido algún tipo de apoyo?;pregunta;#;-;unica;61;-
+16;16;Si;resp;16;17;-;62;0
+16;16;No;resp;16;17;-;63;1
+16;16;No se;resp;16;17;-;64;1
+17;17;¿Ha sido evacuado a causa de un fenómeno natural? (inundación, sismo, erupción);pregunta;#;-;unica;65;-
+17;17;Si;resp;17;18;-;66;0
+17;17;No;resp;17;18;-;67;1
+17;17;No se;resp;17;18;-;68;1
+18;18;¿De acuerdo con experiencias anteriores ¿Considera que su comunidad esta lista para afrontar una situación de desastre tomando en cuenta las labores de prevención?;pregunta;#;-;unica;69;-
+18;18;Si;resp;18;19;-;70;0
+18;18;No;resp;18;19;-;71;1
+18;18;No se;resp;18;19;-;72;1
+19;19;¿Conoce la existencia de la Unidad de Protección Civil?;pregunta;#;-;unica;73;-
+19;19;Si;resp;19;20;-;74;0
+19;19;No;resp;19;20;-;75;1
+19;19;No se;resp;19;20;-;76;1
+20;20;¿Existe en su comunidad, localidad / municipio alguna organización que trabaje en la atención de desastres?;pregunta;#;-;unica;77;-
+20;20;Si;resp;20;21;-;78;0
+20;20;No;resp;20;21;-;79;1
+20;20;No se;resp;20;21;-;80;1
+21;21;¿Sabe donde esta ubicada y que función desempeña la Unidad de Protección Civil?;pregunta;#;-;unica;81;-
+21;21;Se donde se encuentra y se sus funciones;resp;21;22;-;82;0
+21;21;No se donde se encuentra y no sé qué hace;resp;21;22;-;83;1
+21;21;Se que hace, pero no se dónde se encuentra;resp;21;22;-;84;0.5
+22;22;¿Estaría preparado para enfrentar otro desastre como el que enfrento?;pregunta;#;-;unica;85;-
+22;22;Si;resp;22;23;-;86;0
+22;22;No;resp;22;23;-;87;1
+22;22;No se;resp;22;23;-;88;1
+23;23;¡considera que su comunidad puede afrontar una situación de desastre y tiene la información necesaria?;pregunta;#;-;unica;89;-
+23;23;Si;resp;23;24;-;90;0
+23;23;No;resp;23;24;-;91;1
+23;23;No se;resp;23;24;-;92;1
+24;24;¿Qué tanto puede ayudar la Unidad de Protección Civil? ¡puede afrontar una situación de desastres y tienen la información necesaria?;pregunta;#;-;unica;93;-
+24;24;Mucho;resp;24;25;-;94;0
+24;24;Nada;resp;24;25;-;95;1
+24;24;Poco;resp;24;25;-;96;0.5
+25;25;¿Si usted tuviera la certeza de que su vivienda se encuentra en peligro estaría dispuesto a reubicarse?;pregunta;#;-;unica;97;-
+25;25;Si;resp;25;final;-;98;0
+25;25;No;resp;25;final;-;99;1
+25;25;No se;resp;25;final;-;100;1
