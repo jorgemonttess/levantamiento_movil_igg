@@ -218,8 +218,7 @@ $(document).ready(function(){
             var datosResp = datos.split("|");
             
             var r = datosResp[0];
-            
-            alert(r);
+		
             if(r.trim()=="no_existe"){
 
 
