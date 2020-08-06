@@ -23,27 +23,35 @@
         
     </head>
     <body>
-        <div class="container-fluid borde">
-            <div class="contenedorLogin">
-                <div class="col-sm-12">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <h3 class="borde">Inicio de Sesión</h3>
-                        </div>
-                        <div class="col-sm-12 col-md-12 col-lg-12">
-                            <input type="text" id="txt_usuario" placeholder="Nombre de Usuario" class="form-control form-control-lg">
-                        </div>
-                        <div class="col-sm-12 col-md-12 col-lg-12">
-                            <input type="password" id="txt_pass" placeholder="Contraseña" class="form-control form-control-lg">
-                        
-                        </div>
-                        
-                        <div class="col-sm-12 col-md-12 col-lg-12">
-                            <button id="btn_login"class="btn btn-primary btnInicio centrado">Iniciar Sesión</button>
+        <header>
+            <img src="images/igg_white.png" id="logoIGG">
+            <span class="titulo">Levantamiento de Incidencias</span>
+        </header>
+        <main>
+            <div class="container-fluid borde">
+                <div class="contenedorLogin">
+                    <div class="col-sm-12">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h3 class="borde">Inicio de sesión</h3>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-12">
+                                <input type="text" id="txt_usuario" placeholder="Nombre de Usuario" class="form-control form-control-lg">
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-12">
+                                <input type="password" id="txt_pass" placeholder="Contraseña" class="form-control form-control-lg">
+
+                            </div>
+
+                            <div class="col-sm-12 col-md-12 col-lg-12">
+                                <button id="btn_login"class="btn btn-primary btnInicio centrado">Iniciar Sesión</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </main>
+        <footer>
+        </footer>
     </body>
 </html>
