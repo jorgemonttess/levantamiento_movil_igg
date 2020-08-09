@@ -1,4 +1,4 @@
-
+                                                                                                                                                                                                
 function Startpage(){
     /*startAutolocate();
     setTimeout(function(){
@@ -220,13 +220,23 @@ $(document).ready(function(){
             var r = datosResp[0];
 
             if(r.trim()=="no_existe"){
-                alertify.alert('<font face=Arial color=Red><b><span class="fas fa-times"></span>ERROR</b></font>', '<font face=Arial>¡El folio no existe!</font>');
-
+               
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Error',
+                    text:'El folio no existe',
+                    showConfirmButton: true,
+                    confirmButtonColor: '#9D2449',
+                    confirmButtonText: 'Aceptar',
+                    allowOutsideClick:false,
+                    allowEscapeKey:false,
+                    allowEnterKey:true,
+                    animation: true,
+                })
             }
             else if(r.trim()=="existe"){
-                $("#id_reg").val(datosResp[1]);
-                $("#folio").val(datosResp[2]);
-                $("#incidencia").val(datosResp[3]);
+                $("#folio").val(datosResp[1]);
+                $("#incidencia").val(datosResp[2]);
                 
                 $("#busquedaFolio").css("display","none");
                 $("#levantamientoFolio").css("display","block");
@@ -274,30 +284,91 @@ $(document).ready(function(){
     
     $("#btnGuardar").click(function(){
         var idUsuario = $("#idUsuario").val();
-        var id_reg = $("#id_reg").val();
         var folio = $("#folio").val();
         var incidencia = $("#incidencia").val();
         var lat = $("#lat").val();
         var long = $("#long").val();
         var observacion = $("#observacion").val();
+        
+        var infoArchivo = new FormData($("#form_archivo")[0]);
+        
+        $.ajax({
+            data:infoArchivo,
+            url:"includes/accion_cargaArchivo.php",
+            type:"POST",
+            contentType:false,
+            processData:false,
+        }).done(function(respuesta){
+            
+            var datos = respuesta.trim();
+            var datoRespuesta = datos.split("|");
+            
+            var archivo  = datoRespuesta[1];
+            
+             if(datoRespuesta[0]=="cargado"){
+                 $("#loading").css("display","block");
+                 $.post("includes/accion_guadarCuestionario.php", {
+                    archivo:archivo,
+                    idUsuario:idUsuario,
+                    folio:folio,
+                    incidencia:incidencia,
+                    lat:lat,
+                    long:long,
+                    observacion:observacion
+                     
+                }, function(r){
 
-        $.post("includes/accion_guadarCuestionario.php", {
-            id_reg:id_reg,
-            idUsuario:idUsuario,
-            folio:folio,
-            incidencia:incidencia,
-            lat:lat,
-            long:long,
-            observacion:observacion
-        }, function(respuesta){
-            if(respuesta.trim()=="fallo"){
-                alertify.alert('<font face=Arial color=Red><b><span class="fas fa-times"></span>ERROR</b></font>', '<font face=Arial>¡Ocurrio un problema, por favor vuelve a intentar!</font>');
-                $("#loading").css("display","none");
-            }
-            else if(respuesta.trim()=="generado"){
-                alertify.alert('<font face=Arial color=Green><b><span class="fas fa-check-circle"></span> Registro Guardado</b></font>', '<font face=Arial>¡Registro guardado con exito!</font>');
-            }
-        })
+                    if(r.trim()=="fallo"){
+                        $("#loading").css("display","none");
+                        Swal.fire({
+                            icon: 'error',
+                            title: 'Error',
+                            text:'Algo salio mal',
+                            showConfirmButton: true,
+                            confirmButtonColor: '#9D2449',
+                            confirmButtonText: 'Aceptar',
+                            allowOutsideClick:false,
+                            allowEscapeKey:false,
+                            allowEnterKey:true,
+                            animation: true,
+                        })
+                    }
+                    else if(r.trim()=="generado"){
+                        $("#loading").css("display","none");
+                        Swal.fire({
+                            icon: 'success',
+                            title: 'Levantamiento Generado',
+                            text:'Algo salio mal',
+                            showConfirmButton: true,
+                            confirmButtonColor: '#9D2449',
+                            confirmButtonText: 'Aceptar',
+                            allowOutsideClick:false,
+                            allowEscapeKey:false,
+                            allowEnterKey:true,
+                            animation: true,
+                        })
+                        
+                        $("#folio").val("");
+                        $("#incidencia").val("");
+                        $("#lat").val("");
+                        $("#long").val("");
+                        $("#observacion").val("");
+                        $("#archivo").val("");
+                        $("#inputval").val("");
+
+                    }
+                })
+                 
+             }else{
+                 alertify.alert('Error','¡Algo salio mal , el archivo no fue cargado!');
+             }
+            
+         });
+
+        return false;
+        
+
+        
 
     })
         
