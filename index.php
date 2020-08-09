@@ -25,7 +25,7 @@
     <body>
         <header>
             <img src="images/igg_white.png" id="logoIGG">
-            <span class="titulo">Levantamiento de Incidencias</span>
+            <span class="titulo">Levantamiento | Campo</span>
         </header>
         <main>
             <div class="container-fluid borde">
