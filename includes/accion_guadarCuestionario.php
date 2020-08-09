@@ -5,16 +5,15 @@ $hoy = date("Y-m-d");
 $hoyC = date("Y-m-d h:i:s");
 
 $idUsuario = $_POST["idUsuario"];
-$id_reg = $_POST["id_reg"];
 $folio = $_POST["folio"];
 $incidencia = $_POST["incidencia"];
 $lat = $_POST["lat"];
 $long = $_POST["long"];
 $observacion = $_POST["observacion"];
+$archivo = $_POST["archivo"];
 
-
-$query = "INSERT INTO levantamiento_movil (id_reg,usuario,fecha,folio,incidencia,lat,long,observaciones)
-	      VALUES ('$id_reg','$idUsuario','$hoyC','$folio','$incidencia','$lat','$long','$observacion')";
+$query = "INSERT INTO levantamiento_movil (usuario,fecha,folio,incidencia,lat,long,observaciones,fotografia)
+	      VALUES ('$idUsuario','$hoyC','$folio','$incidencia','$lat','$long','$observacion','$archivo')";
 
 $resultado = pg_query($conexion, $query);
 
