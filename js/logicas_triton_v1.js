@@ -360,7 +360,18 @@ $(document).ready(function(){
                 })
                  
              }else{
-                 alertify.alert('Error','¡Algo salio mal , el archivo no fue cargado!');
+                        Swal.fire({
+                            icon: 'error',
+                            title: 'Error',
+                            text:'Algo salio mal, el archivo no fue cargado',
+                            showConfirmButton: true,
+                            confirmButtonColor: '#9D2449',
+                            confirmButtonText: 'Aceptar',
+                            allowOutsideClick:false,
+                            allowEscapeKey:false,
+                            allowEnterKey:true,
+                            animation: true,
+                        })
              }
             
          });
