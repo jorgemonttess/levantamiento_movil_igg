@@ -10,7 +10,7 @@
     $txt_usuario = $_POST['txt_usuario'];
     $txt_pass = $_POST['txt_pass'];
 
-    $consultaLog = "SELECT * FROM usuarios_mov 
+    $consultaLog = "SELECT * FROM usuarios 
                     WHERE usuario ='$txt_usuario' 
                     AND pass ='$txt_pass'
                     AND estatus ='Activo'";
