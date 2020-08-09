@@ -115,9 +115,6 @@
                     <div id="levantamientoFolio" class="borde">
                         <div class="row">
                             <div class="col-12 cajasLev">
-                                <input type="hidden" id="id_reg" placeholder="Id Registro" class="form-control controlesLev" disabled>
-                            </div>
-                            <div class="col-12 cajasLev">
                                 <input type="text" id="folio" placeholder="Folio" class="form-control controlesLev" disabled>
                             </div>
                              <div class="col-12 cajasLev">
@@ -136,7 +133,9 @@
                                  <div class="input__row uploader">
                                     <div id="inputval" class="input-value"></div>
                                     <label for="archivo"></label>
-                                    <input name="archivo" id="archivo" class="upload" type="file">
+                                    <form id="form_archivo" name="form_archivo" method="post" enctype="multipart/form-data">
+                                        <input name="archivo" id="archivo" class="upload" type="file">
+                                     </form>
                                 </div>
                             </div>
                             <div class="col-12 cajasLev">
