@@ -13,7 +13,8 @@
     $consultaLog = "SELECT * FROM usuarios 
                     WHERE usuario ='$txt_usuario' 
                     AND pass ='$txt_pass'
-                    AND estatus ='Activo'";
+                    AND estatus ='Activo'
+                    AND perfil = 'Campo'";
 
     $resultado = pg_query($conexion, $consultaLog);
 
