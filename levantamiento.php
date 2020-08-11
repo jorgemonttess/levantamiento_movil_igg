@@ -115,19 +115,22 @@
                     <div id="levantamientoFolio" class="borde">
                         <div class="row">
                             <div class="col-12 cajasLev">
-                                <input type="text" id="folio" placeholder="Folio" class="form-control controlesLev" disabled>
+                                <input type="text" id="folio" class="form-control controlesLev" disabled>
                             </div>
                              <div class="col-12 cajasLev">
-                                <input type="text" id="incidencia" placeholder="Incidencia" class="form-control controlesLev" disabled>
+                                <input type="text" id="incidencia" class="form-control controlesLev" disabled>
                             </div>
                             <div class="col-6 cajasLev">
-                                <input type="text" id="lat" placeholder="Latitud" class="form-control controlesLev" disabled>
+                                <input type="text" id="lat" class="form-control controlesLev" disabled>
                             </div>
                             <div class="col-6 cajasLev">
-                                <input type="text" id="long" placeholder="Longitud" class="form-control controlesLev" disabled>
+                                <input type="text" id="long" class="form-control controlesLev" disabled>
                             </div>
                             <div class="col-12 cajasLev">
-                                <textarea id="observacion" placeholder="Observaciones" class="form-control" rows="3"></textarea>
+                                <label>Observaciones</label>
+                            </div>
+                            <div class="col-12 cajasLev">
+                                <textarea id="observacion" class="form-control" rows="3"></textarea>
                             </div>
                             <div class="col-12 cajasLev">
                                  <div class="input__row uploader">
