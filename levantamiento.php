@@ -128,8 +128,6 @@
                             </div>
                             <div class="col-12 cajasLev">
                                 <label>Observaciones</label>
-                            </div>
-                            <div class="col-12 cajasLev">
                                 <textarea id="observacion" class="form-control" rows="3"></textarea>
                             </div>
                             <div class="col-12 cajasLev">
