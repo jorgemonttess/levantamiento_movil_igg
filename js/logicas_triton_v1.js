@@ -322,8 +322,7 @@ $(document).ready(function(){
                         $("#loading").css("display","none");
                         Swal.fire({
                             icon: 'error',
-                            title: 'Error',
-                            text:'Algo salio mal',
+                            title: 'Algo salio mal',
                             showConfirmButton: true,
                             confirmButtonColor: '#9D2449',
                             confirmButtonText: 'Aceptar',
@@ -338,7 +337,6 @@ $(document).ready(function(){
                         Swal.fire({
                             icon: 'success',
                             title: 'Levantamiento Generado',
-                            text:'Algo salio mal',
                             showConfirmButton: true,
                             confirmButtonColor: '#9D2449',
                             confirmButtonText: 'Aceptar',
@@ -362,8 +360,7 @@ $(document).ready(function(){
              }else{
                         Swal.fire({
                             icon: 'error',
-                            title: 'Error',
-                            text:'Algo salio mal, el archivo no fue cargado',
+                            title: 'Algo salio mal, el archivo no fue cargado',
                             showConfirmButton: true,
                             confirmButtonColor: '#9D2449',
                             confirmButtonText: 'Aceptar',
